@@ -1,0 +1,467 @@
+{
+	"name": "Score",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Game"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ScoreSave",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Easy Score Save"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 408136607223976
+						}
+					],
+					"actions": [
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 738736965403047,
+							"parameters": {
+								"key": "\"RecordEasy\""
+							}
+						}
+					],
+					"sid": 428082225662535
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-missing",
+							"objectClass": "LocalStorage",
+							"sid": 922694301889059,
+							"parameters": {
+								"key": "\"RecordEasy\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 529865899631390,
+							"parameters": {
+								"key": "\"RecordEasy\"",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 789887626135734
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 451248912928264,
+							"parameters": {
+								"key": "\"RecordEasy\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 606067790080796,
+							"parameters": {
+								"key": "\"RecordEasy\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 940665052564265,
+							"parameters": {
+								"variable": "HighScoreEasy",
+								"value": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 284295369814012
+				},
+				{
+					"eventType": "comment",
+					"text": "Hard Score Save"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 154713471533551
+						}
+					],
+					"actions": [
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 286911164451381,
+							"parameters": {
+								"key": "\"RecordHard\""
+							}
+						}
+					],
+					"sid": 541933197680091
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-missing",
+							"objectClass": "LocalStorage",
+							"sid": 229200796492480,
+							"parameters": {
+								"key": "\"RecordHard\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 748541475119645,
+							"parameters": {
+								"key": "\"RecordHard\"",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 302831486680647
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 403015923512604,
+							"parameters": {
+								"key": "\"RecordHard\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 229388257476180,
+							"parameters": {
+								"key": "\"RecordHard\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 614599916737268,
+							"parameters": {
+								"variable": "HighScoreHard",
+								"value": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 699015073106547
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 751596041223309,
+							"parameters": {
+								"key": 90
+							}
+						}
+					],
+					"actions": [],
+					"sid": 384605162345039
+				}
+			],
+			"sid": 390571288567364
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Option Save",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "INCTIVE FRAME SAVES"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 568520136246327
+						}
+					],
+					"actions": [
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 551180677404963,
+							"parameters": {
+								"key": "\"InactiveFrame\""
+							}
+						}
+					],
+					"sid": 538236476376656
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-missing",
+							"objectClass": "LocalStorage",
+							"sid": 440363922398794,
+							"parameters": {
+								"key": "\"InactiveFrame\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 934545037173772,
+							"parameters": {
+								"key": "\"InactiveFrame\"",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 186313753650546
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 497531038569687,
+							"parameters": {
+								"key": "\"InactiveFrame\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 941292819644268,
+							"parameters": {
+								"key": "\"InactiveFrame\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 787101920182311,
+							"parameters": {
+								"variable": "OpacityInactive",
+								"value": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 396043049065036
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 152347810877976,
+							"parameters": {
+								"key": 90
+							}
+						}
+					],
+					"actions": [],
+					"sid": 713195779905280
+				},
+				{
+					"eventType": "comment",
+					"text": "INCTIVE FRAME SAVES"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 330081124351101
+						}
+					],
+					"actions": [
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 461011496882106,
+							"parameters": {
+								"key": "\"FlashFrame\""
+							}
+						}
+					],
+					"sid": 203798528143172
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-missing",
+							"objectClass": "LocalStorage",
+							"sid": 595854041738194,
+							"parameters": {
+								"key": "\"FlashFrame\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 978614672067435,
+							"parameters": {
+								"key": "\"FlashFrame\"",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 933307172178463
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 909413667108582,
+							"parameters": {
+								"key": "\"FlashFrame\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 800374082743180,
+							"parameters": {
+								"key": "\"FlashFrame\""
+							}
+						}
+					],
+					"sid": 933759411745399
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 545381369319519,
+							"parameters": {
+								"key": 90
+							}
+						}
+					],
+					"actions": [],
+					"sid": 231598860870861
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 434969981902328,
+							"parameters": {
+								"key": "\"FlashFrame\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 971525671006351,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "LocalStorage",
+									"sid": 473340754797828,
+									"parameters": {
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 506785277121316,
+									"parameters": {
+										"variable": "Flash",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 947268656992291
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "LocalStorage",
+									"sid": 690031050056003,
+									"parameters": {
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 536540587943076,
+									"parameters": {
+										"variable": "Flash",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 865358199055227
+						}
+					]
+				}
+			],
+			"sid": 425862155817595
+		}
+	],
+	"sid": 271509932443683
+}

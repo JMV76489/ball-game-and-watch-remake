@@ -1,0 +1,15 @@
+{
+	"name": "UTC",
+	"plugin-id": "wtUtc",
+	"sid": 299844098512919,
+	"singleglobal-inst": {
+		"type": "UTC",
+		"properties": {
+			"timeZone": 1,
+			"dateSpacer": ".",
+			"dateFormat": "littleEndian",
+			"useLocal": true
+		},
+		"uid": 65
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"name": "BallFrame",
+	"plugin-id": "Sprite",
+	"sid": 367039181855094,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Bow",
+			"type": "number",
+			"desc": "",
+			"sid": 137204529506060
+		},
+		{
+			"name": "FramePos",
+			"type": "number",
+			"desc": "",
+			"sid": 721678211184713
+		},
+		{
+			"name": "Active",
+			"type": "boolean",
+			"desc": "",
+			"sid": 626613101634426
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 40,
+						"height": 41,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 16,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.95,
+								0,
+								0.95,
+								0.9512195121951219,
+								0,
+								0.9512195121951219
+							]
+						},
+						"duration": 1
+					}
+				],
+				"sid": 992254082329248,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

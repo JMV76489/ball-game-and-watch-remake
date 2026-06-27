@@ -1,0 +1,5335 @@
+{
+	"name": "Game",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "ArmPosition",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 805670908422109
+		},
+		{
+			"eventType": "variable",
+			"name": "OpacityInactive",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 762541676566214
+		},
+		{
+			"eventType": "variable",
+			"name": "Score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 898466257896492
+		},
+		{
+			"eventType": "variable",
+			"name": "ForDifficult",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 735674076559212
+		},
+		{
+			"eventType": "variable",
+			"name": "Game",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 676399923469838
+		},
+		{
+			"eventType": "variable",
+			"name": "Flash",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 846789727879663
+		},
+		{
+			"eventType": "variable",
+			"name": "RestartDificult",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 780584878819022
+		},
+		{
+			"eventType": "variable",
+			"name": "DificultValue",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 955821491121002
+		},
+		{
+			"eventType": "variable",
+			"name": "GameRunning",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 728312662855138
+		},
+		{
+			"eventType": "variable",
+			"name": "TickTimer",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 947462785434541
+		},
+		{
+			"eventType": "variable",
+			"name": "MaxTickTimer",
+			"type": "number",
+			"initialValue": "1.2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 120027153399551
+		},
+		{
+			"eventType": "variable",
+			"name": "Hour",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 539205669429434
+		},
+		{
+			"eventType": "variable",
+			"name": "ShowingHour",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 379500882914198
+		},
+		{
+			"eventType": "variable",
+			"name": "HighScoreEasy",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 557816109682127
+		},
+		{
+			"eventType": "variable",
+			"name": "HighScoreHard",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 108355604778208
+		},
+		{
+			"eventType": "variable",
+			"name": "ButtonReady",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 580672043836462
+		},
+		{
+			"eventType": "variable",
+			"name": "PAUSED",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 379177771491925
+		},
+		{
+			"eventType": "variable",
+			"name": "Timescalevalue",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 339625204174570
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Arms",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Arms",
+							"sid": 432736359197426,
+							"parameters": {
+								"instance-variable": "ArmPos",
+								"comparison": 0,
+								"value": "ArmPosition"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Arms",
+							"sid": 280705233730976,
+							"parameters": {
+								"instance-variable": "Active",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 873436404655562
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Arms",
+							"sid": 527087873149095,
+							"parameters": {
+								"instance-variable": "ArmPos",
+								"comparison": 1,
+								"value": "ArmPosition"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Arms",
+							"sid": 156503831029348,
+							"parameters": {
+								"instance-variable": "Active",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 306906752708545
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Arms",
+							"sid": 642159970006033,
+							"parameters": {
+								"instance-variable": "Active"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Arms",
+							"sid": 166681081494787,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 637955082499695
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Arms",
+							"sid": 546027048048546,
+							"parameters": {
+								"instance-variable": "Active"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Arms",
+							"sid": 312289705740209,
+							"parameters": {
+								"opacity": "OpacityInactive"
+							}
+						}
+					],
+					"sid": 146304336742974
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 640315121371951,
+							"parameters": {
+								"key": 39
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 886270962343985,
+							"parameters": {
+								"variable": "ArmPosition",
+								"comparison": 2,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 515995144461273,
+							"parameters": {
+								"variable": "PAUSED"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 294837164830669,
+							"parameters": {
+								"variable": "ArmPosition",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 186597842141150,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 741925188472887,
+									"parameters": {
+										"variable": "Flash"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "flash",
+									"objectClass": "Arms",
+									"sid": 160452002377762,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "0.1"
+									}
+								}
+							],
+							"sid": 636488630643400
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 528508086319674,
+							"parameters": {
+								"object": "BUTTONNORMAL"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "BUTTONNORMAL",
+							"sid": 659783194325047,
+							"parameters": {
+								"instance-variable": "Right"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 566440926392967,
+							"parameters": {
+								"variable": "ArmPosition",
+								"comparison": 2,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 845893370807967,
+							"parameters": {
+								"variable": "PAUSED"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 845967578369836,
+							"parameters": {
+								"variable": "ArmPosition",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 521127497182694,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 171797538217443,
+									"parameters": {
+										"variable": "Flash"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "flash",
+									"objectClass": "Arms",
+									"sid": 277376595536963,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "0.1"
+									}
+								}
+							],
+							"sid": 353348183030714
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 418519058644462,
+							"parameters": {
+								"key": 37
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 433267477129281,
+							"parameters": {
+								"variable": "ArmPosition",
+								"comparison": 4,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 563692235124012,
+							"parameters": {
+								"variable": "PAUSED"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 606775037629370,
+							"parameters": {
+								"variable": "ArmPosition",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 575375921806005,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 775737762700159,
+									"parameters": {
+										"variable": "Flash"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "flash",
+									"objectClass": "Arms",
+									"sid": 321927848703197,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "0.1"
+									}
+								}
+							],
+							"sid": 613860361573611
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 695462042200338,
+							"parameters": {
+								"object": "BUTTONNORMAL"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "BUTTONNORMAL",
+							"sid": 718383742802002,
+							"parameters": {
+								"instance-variable": "Right"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 670285700105135,
+							"parameters": {
+								"variable": "ArmPosition",
+								"comparison": 4,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 611799766348642,
+							"parameters": {
+								"variable": "PAUSED"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 168002454056546,
+							"parameters": {
+								"variable": "ArmPosition",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 590235070918489,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 595118471193338,
+									"parameters": {
+										"variable": "Flash"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "flash",
+									"objectClass": "Arms",
+									"sid": 773550595215301,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "0.1"
+									}
+								}
+							],
+							"sid": 977809027657429
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Arms",
+							"sid": 212969271769366,
+							"parameters": {
+								"instance-variable": "Active"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 959323024984582,
+							"parameters": {
+								"variable": "Flash"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-flashing",
+							"objectClass": "Arms",
+							"sid": 867986756971343,
+							"behaviorType": "Flash"
+						}
+					],
+					"sid": 676176319726225
+				}
+			],
+			"sid": 955218921949288
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Legs",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Legs",
+							"sid": 757280773490809,
+							"parameters": {
+								"instance-variable": "Active"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Legs",
+							"sid": 411439528094232,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 291943575643415
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Legs",
+							"sid": 574636130615189,
+							"parameters": {
+								"instance-variable": "Active"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Legs",
+							"sid": 513076622139770,
+							"parameters": {
+								"opacity": "OpacityInactive"
+							}
+						}
+					],
+					"sid": 329222817272357
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 819181968708467,
+							"parameters": {
+								"object": "Legs"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 615243455896424,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 730272561087532,
+									"parameters": {
+										"variable": "ArmPosition",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 502002150013963,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Legs",
+											"sid": 611417851011368,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Legs",
+											"sid": 674805179820927,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 980588239935582
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 435958144850754,
+									"parameters": {
+										"variable": "ArmPosition",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 331597147950931,
+									"parameters": {
+										"variable": "ArmPosition",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 892799477366895,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Legs",
+											"sid": 199982348912858,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Legs",
+											"sid": 304758611498415,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 663154624191818
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 618553876504719,
+									"parameters": {
+										"variable": "ArmPosition",
+										"comparison": 0,
+										"value": "1"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 250436567154530,
+									"parameters": {
+										"variable": "ArmPosition",
+										"comparison": 0,
+										"value": "0"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 994807854434745,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Legs",
+											"sid": 790639576990373,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Legs",
+											"sid": 277967507723281,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 161790366948845
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 902609424992884,
+									"parameters": {
+										"variable": "ArmPosition",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 844911602525108,
+									"parameters": {
+										"variable": "ArmPosition",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 428707109560636,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Legs",
+											"sid": 592959625276284,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Legs",
+											"sid": 438949229516380,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 652595914948360
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 886132640859982,
+									"parameters": {
+										"variable": "ArmPosition",
+										"comparison": 0,
+										"value": "1"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 901623218014172,
+									"parameters": {
+										"variable": "ArmPosition",
+										"comparison": 0,
+										"value": "2"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 512484624921303,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Legs",
+											"sid": 885504318012611,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Legs",
+											"sid": 331652458446756,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 401161809211134
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 499955462519712,
+									"parameters": {
+										"variable": "ArmPosition",
+										"comparison": 0,
+										"value": "2"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 561882394602428,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Legs",
+											"sid": 507399386269828,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Legs",
+											"sid": 240473375168773,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 711290284757156
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 842408069353847,
+									"parameters": {
+										"variable": "ArmPosition",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 187225706820362,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Legs",
+											"sid": 291769317894297,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Legs",
+											"sid": 246286150883905,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 124572730434951
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 877599079541846,
+									"parameters": {
+										"variable": "ArmPosition",
+										"comparison": 0,
+										"value": "0"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 975897701098743,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Legs",
+											"sid": 923925355256183,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Legs",
+											"sid": 555232716818077,
+											"parameters": {
+												"instance-variable": "Active",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 242360969613410
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 982468167361926
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Balls",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Ball Frame"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "BallFrame",
+							"sid": 257691241110144,
+							"parameters": {
+								"instance-variable": "Active"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "BallFrame",
+							"sid": 895306488676358,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 750102440650055
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "BallFrame",
+							"sid": 743745238660538,
+							"parameters": {
+								"instance-variable": "Active"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "BallFrame",
+							"sid": 289230264945442,
+							"parameters": {
+								"opacity": "OpacityInactive"
+							}
+						}
+					],
+					"sid": 440112899351369,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Ball Position"
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 236153254226074,
+							"parameters": {
+								"object": "BallFrame"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 987144918402988,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Ball",
+									"sid": 631917685844289,
+									"parameters": {
+										"instance-variable": "Bow",
+										"comparison": 0,
+										"value": "BallFrame.Bow"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Ball",
+									"sid": 327445176620501,
+									"parameters": {
+										"instance-variable": "FramePos",
+										"comparison": 0,
+										"value": "BallFrame.FramePos"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Ball",
+									"sid": 632277640599244,
+									"parameters": {
+										"x": "BallFrame.X",
+										"y": "BallFrame.Y"
+									}
+								}
+							],
+							"sid": 183618039391434
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Ball movement"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-timer",
+							"objectClass": "Ball",
+							"sid": 639390602873723,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"Move\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-timer",
+							"objectClass": "Ball",
+							"sid": 740259503659433,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "Self.TimerValue",
+								"type": "once",
+								"tag": "\"Move\""
+							}
+						}
+					],
+					"sid": 494631690796153,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Ball",
+									"sid": 379874701550851,
+									"parameters": {
+										"instance-variable": "Clockwise"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Ball",
+									"sid": 533994410508223,
+									"parameters": {
+										"instance-variable": "FramePos",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 856146150165317
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Ball",
+									"sid": 991800490595256,
+									"parameters": {
+										"instance-variable": "Clockwise"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Ball",
+									"sid": 375296862907978,
+									"parameters": {
+										"instance-variable": "FramePos",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 775683355101709
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 798472528098488,
+									"parameters": {
+										"variable": "Flash"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "flash",
+									"objectClass": "Ball",
+									"sid": 173463681027537,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "0.1"
+									}
+								}
+							],
+							"sid": 872507039846091
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 461453589915727,
+									"parameters": {
+										"variable": "Game",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 175566364695461,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Ball",
+											"sid": 173751369699623,
+											"parameters": {
+												"instance-variable": "Bow",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 233449923488598,
+											"parameters": {
+												"audio-file": "BallGameAtickSound1",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 686326810289493
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Ball",
+											"sid": 734895303631249,
+											"parameters": {
+												"instance-variable": "Bow",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 996213285523857,
+											"parameters": {
+												"audio-file": "BallGameAtickSound2",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 885655055585568
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 443039979475717,
+									"parameters": {
+										"variable": "Game",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 148061914834789,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Ball",
+											"sid": 603290601526180,
+											"parameters": {
+												"instance-variable": "Bow",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 558431268397537,
+											"parameters": {
+												"audio-file": "BallGameBTick2",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 565176900716436
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Ball",
+											"sid": 316755687517916,
+											"parameters": {
+												"instance-variable": "Bow",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 701316597782276,
+											"parameters": {
+												"audio-file": "BallGameBTick1",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 844403654748937
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Ball",
+											"sid": 621397675087344,
+											"parameters": {
+												"instance-variable": "Bow",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 878822936617059,
+											"parameters": {
+												"audio-file": "BallGameBTick3",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 654881769691022
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Ball",
+							"sid": 497517697209068
+						}
+					],
+					"actions": [],
+					"sid": 316333094048227,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Ball",
+									"sid": 859882906333504,
+									"parameters": {
+										"instance-variable": "Bow",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Ball",
+									"sid": 445733224568189,
+									"parameters": {
+										"instance-variable": "MaxFramePos",
+										"value": "11"
+									}
+								}
+							],
+							"sid": 531500874173102,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Ball",
+											"sid": 990750000138927,
+											"parameters": {
+												"instance-variable": "Clockwise"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 842818758429318,
+											"parameters": {
+												"instance-variable": "CatchFrame",
+												"value": "2"
+											}
+										}
+									],
+									"sid": 669090106277638
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Ball",
+											"sid": 952454298918350,
+											"parameters": {
+												"instance-variable": "Clockwise"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 906370850764206,
+											"parameters": {
+												"instance-variable": "CatchFrame",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 883187859420637
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Ball",
+									"sid": 230793226093722,
+									"parameters": {
+										"instance-variable": "Bow",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Ball",
+									"sid": 622695617057110,
+									"parameters": {
+										"instance-variable": "MaxFramePos",
+										"value": "9"
+									}
+								}
+							],
+							"sid": 705158457202974,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Ball",
+											"sid": 180292657694556,
+											"parameters": {
+												"instance-variable": "Clockwise"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 541780788590696,
+											"parameters": {
+												"instance-variable": "CatchFrame",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 556478539716866
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Ball",
+											"sid": 227919042597391,
+											"parameters": {
+												"instance-variable": "Clockwise"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 417226871615621,
+											"parameters": {
+												"instance-variable": "CatchFrame",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 395349251976735
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Ball",
+									"sid": 766778829873723,
+									"parameters": {
+										"instance-variable": "Bow",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Ball",
+									"sid": 961661387184518,
+									"parameters": {
+										"instance-variable": "MaxFramePos",
+										"value": "7"
+									}
+								}
+							],
+							"sid": 318195082415356,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Ball",
+											"sid": 939298110193920,
+											"parameters": {
+												"instance-variable": "Clockwise"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 938649935946496,
+											"parameters": {
+												"instance-variable": "CatchFrame",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 981785345180167
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Ball",
+											"sid": 206511216101696,
+											"parameters": {
+												"instance-variable": "Clockwise"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 967580267811116,
+											"parameters": {
+												"instance-variable": "CatchFrame",
+												"value": "2"
+											}
+										}
+									],
+									"sid": 698972828936439
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Ball Crush"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Ball",
+							"sid": 280521597441082,
+							"parameters": {
+								"instance-variable": "FramePos",
+								"comparison": 2,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 754393554886447,
+							"parameters": {
+								"name": "\"Lose\"",
+								"parameter-n": [
+									"\"Left\""
+								]
+							}
+						}
+					],
+					"sid": 911592434725367,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 136772340336634,
+									"parameters": {
+										"object": "Ball"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Ball",
+									"sid": 814611819102911
+								}
+							],
+							"sid": 184195120995746
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Ball",
+							"sid": 341533119300898,
+							"parameters": {
+								"instance-variable": "FramePos",
+								"comparison": 4,
+								"value": "Self.MaxFramePos"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 175051054690749,
+							"parameters": {
+								"name": "\"Lose\"",
+								"parameter-n": [
+									"\"Right\""
+								]
+							}
+						}
+					],
+					"sid": 409244646862580,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 679520976857541,
+									"parameters": {
+										"object": "Ball"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Ball",
+									"sid": 839439499868574
+								}
+							],
+							"sid": 935493012892374
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 417701512594596
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "CRUSH",
+							"sid": 401244736096435,
+							"parameters": {
+								"opacity": "OpacityInactive"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "SCOREHUD",
+							"sid": 427737571327174,
+							"parameters": {
+								"text": "Score"
+							}
+						}
+					],
+					"sid": 340156895575038
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 490694751770562,
+							"parameters": {
+								"name": "\"Lose\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 458800559165741,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CRUSH",
+									"sid": 963018924312268,
+									"parameters": {
+										"instance-variable": "Side",
+										"comparison": 0,
+										"value": "Function.Param(0)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 613382879868879,
+									"parameters": {
+										"object": "Ball",
+										"time-scale": "0"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Collider",
+									"sid": 952217740512840,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								}
+							],
+							"sid": 912752081277771,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 305608023649814,
+											"parameters": {
+												"variable": "Flash"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-opacity",
+											"objectClass": "CRUSH",
+											"sid": 867036703965611,
+											"parameters": {
+												"opacity": "100"
+											}
+										},
+										{
+											"id": "flash",
+											"objectClass": "CRUSH",
+											"sid": 806663620193252,
+											"behaviorType": "Flash",
+											"parameters": {
+												"on-time": "0.1",
+												"off-time": "0.1",
+												"duration": "0.1"
+											}
+										}
+									],
+									"sid": 181459059755781
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 658918152582455,
+											"parameters": {
+												"variable": "Flash"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-opacity",
+											"objectClass": "CRUSH",
+											"sid": 302919999872957,
+											"parameters": {
+												"opacity": "100"
+											}
+										}
+									],
+									"sid": 727938505224898
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 560498134696865,
+											"parameters": {
+												"seconds": "1.0"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 859359186931525,
+											"parameters": {
+												"variable": "GameRunning",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 379395478924858
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [],
+									"sid": 797938774090421
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 352043688957891,
+							"parameters": {
+								"name": "\"Lose\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 512491625770906,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CRUSH",
+									"sid": 528277702558362,
+									"parameters": {
+										"instance-variable": "Side",
+										"comparison": 0,
+										"value": "Function.Param(0)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 924439327870906,
+									"parameters": {
+										"audio-file": "Lose",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 589488543536677,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 664538855449836,
+									"parameters": {
+										"variable": "GameRunning",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 753573822104646
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 263501212455414,
+									"parameters": {
+										"variable": "Game",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 442466554107650,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 250110457506078,
+											"parameters": {
+												"variable": "Score",
+												"comparison": 5,
+												"value": "HighScoreEasy"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 378592644008746,
+											"parameters": {
+												"variable": "HighScoreEasy",
+												"value": "Score"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 174478851402340,
+											"parameters": {
+												"key": "\"RecordEasy\"",
+												"value": "Score"
+											}
+										}
+									],
+									"sid": 254292910945773
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 349313445746907,
+									"parameters": {
+										"variable": "Game",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 201437398029759,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 469876099899448,
+											"parameters": {
+												"variable": "Score",
+												"comparison": 5,
+												"value": "HighScoreHard"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 796867514507995,
+											"parameters": {
+												"variable": "HighScoreHard",
+												"value": "Score"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 919696608739293,
+											"parameters": {
+												"key": "\"RecordHard\"",
+												"value": "Score"
+											}
+										}
+									],
+									"sid": 296812145370616
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Ball Catch"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 130254513382192,
+							"parameters": {
+								"object": "Arms"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 504726917350794,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Collider",
+									"sid": 513606507003264,
+									"parameters": {
+										"instance-variable": "ArmID",
+										"comparison": 0,
+										"value": "Arms.ArmID"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Arms",
+									"sid": 470006279230046,
+									"parameters": {
+										"instance-variable": "Active"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "Collider",
+									"sid": 143202743443989,
+									"parameters": {
+										"object": "Arms",
+										"image-point-optional": "1"
+									}
+								}
+							],
+							"sid": 989900308113134
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Ball",
+							"sid": 480551464092378,
+							"parameters": {
+								"object": "Collider"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Ball",
+							"sid": 435288593229910,
+							"parameters": {
+								"instance-variable": "Touched"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "toggle-boolean-instvar",
+							"objectClass": "Ball",
+							"sid": 105162441934110,
+							"parameters": {
+								"instance-variable": "Clockwise"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Ball",
+							"sid": 215117877098841,
+							"parameters": {
+								"instance-variable": "Touched",
+								"value": "true"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 117196921981856,
+							"parameters": {
+								"name": "\"GetPoints\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 839063036049916
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Ball",
+							"sid": 537674993228610,
+							"parameters": {
+								"instance-variable": "FramePos",
+								"comparison": 4,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Ball",
+							"sid": 446445802854743,
+							"parameters": {
+								"instance-variable": "FramePos",
+								"comparison": 2,
+								"value": "Self.MaxFramePos"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Ball",
+							"sid": 914413845185430,
+							"parameters": {
+								"instance-variable": "Touched",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 662587758604090
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 187245025947079,
+							"parameters": {
+								"name": "\"GetPoints\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 174980185804085,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 768942768069460,
+									"parameters": {
+										"variable": "Game",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 170291088907480,
+									"parameters": {
+										"variable": "Score",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 259064729900076,
+									"parameters": {
+										"variable": "DificultValue",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "SCOREHUD",
+									"sid": 441557164155493,
+									"parameters": {
+										"text": "Score"
+									}
+								}
+							],
+							"sid": 148043763804721
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 500244410290187,
+									"parameters": {
+										"variable": "Game",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 331160248815509,
+									"parameters": {
+										"variable": "Score",
+										"value": "10"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "SCOREHUD",
+									"sid": 693484976653066,
+									"parameters": {
+										"text": "Score"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 238993834815287,
+									"parameters": {
+										"variable": "DificultValue",
+										"value": "10"
+									}
+								}
+							],
+							"sid": 652464427711805
+						}
+					]
+				}
+			],
+			"sid": 454381110175469
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Difficult",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 724029297887997,
+							"parameters": {
+								"variable": "Game",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 857430338724614,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 852569748553100,
+									"parameters": {
+										"variable": "DificultValue",
+										"comparison": 5,
+										"value": "ForDifficult"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 755458245898204,
+									"parameters": {
+										"variable": "Timescalevalue",
+										"value": "0.125"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 117827119747848,
+									"parameters": {
+										"variable": "ForDifficult",
+										"value": "5"
+									}
+								}
+							],
+							"sid": 603934937489925
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 238912492236573,
+									"parameters": {
+										"variable": "DificultValue",
+										"comparison": 5,
+										"value": "RestartDificult"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 619889911827821,
+									"parameters": {
+										"variable": "Timescalevalue",
+										"value": "1.0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 662919152153200,
+									"parameters": {
+										"variable": "ForDifficult",
+										"value": "5"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 352179194062238,
+									"parameters": {
+										"variable": "DificultValue",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 238256829100202
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 365284698579140,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "save",
+									"objectClass": "System",
+									"sid": 494991509257008,
+									"parameters": {
+										"slot": "\"mysave\""
+									}
+								}
+							],
+							"sid": 215089406098046
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 931984027551935,
+									"parameters": {
+										"key": 76
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "load",
+									"objectClass": "System",
+									"sid": 154643698771463,
+									"parameters": {
+										"slot": "\"mysave\""
+									}
+								}
+							],
+							"sid": 518535424413127
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 260217572435562,
+							"parameters": {
+								"variable": "Game",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 669201445170371,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 823829567312601,
+									"parameters": {
+										"variable": "DificultValue",
+										"comparison": 5,
+										"value": "ForDifficult"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 959021291044626,
+									"parameters": {
+										"variable": "Timescalevalue",
+										"value": "0.125"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 397702479734340,
+									"parameters": {
+										"variable": "ForDifficult",
+										"value": "50"
+									}
+								}
+							],
+							"sid": 329243458873836
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 566180625457916,
+									"parameters": {
+										"variable": "DificultValue",
+										"comparison": 5,
+										"value": "RestartDificult"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 708515260391435,
+									"parameters": {
+										"variable": "Timescalevalue",
+										"value": "1.0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 242610903166952,
+									"parameters": {
+										"variable": "ForDifficult",
+										"value": "50"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 213618142408008,
+									"parameters": {
+										"variable": "DificultValue",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 364951981408990
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 566464019233066,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "save",
+									"objectClass": "System",
+									"sid": 420536846138139,
+									"parameters": {
+										"slot": "\"mysave\""
+									}
+								}
+							],
+							"sid": 179958952524823
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 963625686453736,
+									"parameters": {
+										"key": 76
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "load",
+									"objectClass": "System",
+									"sid": 191918966507144,
+									"parameters": {
+										"slot": "\"mysave\""
+									}
+								}
+							],
+							"sid": 304581301547460
+						}
+					]
+				}
+			],
+			"sid": 559415514433169
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DifficultSelect",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 147375702609621,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [],
+					"sid": 790914328152419,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 231178839419362,
+									"parameters": {
+										"variable": "GameRunning"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 636892060795770,
+									"parameters": {
+										"object": "Ball",
+										"time-scale": "1.0"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 311032709439674,
+									"parameters": {
+										"name": "\"StartGame\"",
+										"parameter-n": [
+											"0"
+										]
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 466242251569372,
+									"parameters": {
+										"variable": "GameRunning",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "CRUSH",
+									"sid": 195892952372890,
+									"parameters": {
+										"opacity": "OpacityInactive"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 157692923318079,
+									"parameters": {
+										"variable": "Game",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 131933149925290,
+									"parameters": {
+										"variable": "ShowingHour",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 387264920230231
+						}
+					],
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 847412406740002,
+							"parameters": {
+								"key": 66
+							}
+						}
+					],
+					"actions": [],
+					"sid": 429610559816468,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 453297259582274,
+									"parameters": {
+										"variable": "GameRunning"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 817587358638599,
+									"parameters": {
+										"object": "Ball",
+										"time-scale": "1.0"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 987979592209591,
+									"parameters": {
+										"name": "\"StartGame\"",
+										"parameter-n": [
+											"1"
+										]
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 625269444514428,
+									"parameters": {
+										"variable": "GameRunning",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "CRUSH",
+									"sid": 922131212610505,
+									"parameters": {
+										"opacity": "OpacityInactive"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 545680806683143,
+									"parameters": {
+										"variable": "Game",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 284246805618492,
+									"parameters": {
+										"variable": "ShowingHour",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 768656743075093
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 323676679093178,
+							"parameters": {
+								"object": "ButtonSelectNormal"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ButtonSelectNormal",
+							"sid": 323908439905593,
+							"parameters": {
+								"instance-variable": "Option",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 558203645499292,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 159528515325001,
+									"parameters": {
+										"variable": "GameRunning"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 436866644110273,
+									"parameters": {
+										"object": "Ball",
+										"time-scale": "1.0"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 618359800261892,
+									"parameters": {
+										"name": "\"StartGame\"",
+										"parameter-n": [
+											"0"
+										]
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 786221942442269,
+									"parameters": {
+										"variable": "GameRunning",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "CRUSH",
+									"sid": 811610802739505,
+									"parameters": {
+										"opacity": "OpacityInactive"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 723280012191604,
+									"parameters": {
+										"variable": "Game",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 625394581023215,
+									"parameters": {
+										"variable": "ShowingHour",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 957832103850291
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 111417075668001,
+							"parameters": {
+								"object": "ButtonSelectNormal"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ButtonSelectNormal",
+							"sid": 613434432760366,
+							"parameters": {
+								"instance-variable": "Option",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 827096344159684,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 872535491099195,
+									"parameters": {
+										"variable": "GameRunning"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 636664270793186,
+									"parameters": {
+										"object": "Ball",
+										"time-scale": "1.0"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 105374725776925,
+									"parameters": {
+										"name": "\"StartGame\"",
+										"parameter-n": [
+											"1"
+										]
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 358400876628619,
+									"parameters": {
+										"variable": "GameRunning",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "CRUSH",
+									"sid": 791929812690055,
+									"parameters": {
+										"opacity": "OpacityInactive"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 629395152247289,
+									"parameters": {
+										"variable": "Game",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 279819874797955,
+									"parameters": {
+										"variable": "ShowingHour",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 580069278505289
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 288657701974906
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Collider",
+							"sid": 543837520684597,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 615023990791010,
+							"parameters": {
+								"object": "Ball",
+								"time-scale": "0"
+							}
+						}
+					],
+					"sid": 744427664813081
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 904605892436672,
+							"parameters": {
+								"name": "\"StartGame\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Ball",
+							"sid": 378200702505785
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 573632118502355,
+							"parameters": {
+								"variable": "ButtonReady",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 607385063372245,
+							"parameters": {
+								"variable": "Timescalevalue",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 859539011304099,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 538788907453489,
+									"parameters": {
+										"index": "0",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 361591791790710,
+									"parameters": {
+										"variable": "Score",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 745115677144406,
+									"parameters": {
+										"variable": "RestartDificult",
+										"value": "40"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 797278416296961,
+									"parameters": {
+										"variable": "ForDifficult",
+										"value": "5"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 953186989893676,
+									"parameters": {
+										"variable": "DificultValue",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 861087714301033,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 770397720008632,
+											"parameters": {
+												"count": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 869214186881438,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 328942485527157,
+											"parameters": {
+												"object-to-create": "Ball",
+												"layer": "\"Ball\"",
+												"x": "0",
+												"y": "0"
+											}
+										}
+									],
+									"sid": 850059732998765
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 437004033891607,
+									"parameters": {
+										"index": "0",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 820819074308941,
+									"parameters": {
+										"variable": "Score",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 324163603887725,
+									"parameters": {
+										"variable": "RestartDificult",
+										"value": "250"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 625962103730220,
+									"parameters": {
+										"variable": "ForDifficult",
+										"value": "50"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 344813580111490,
+									"parameters": {
+										"variable": "DificultValue",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 652444704934696,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 642726057923400,
+											"parameters": {
+												"count": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 361887576977103,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 461418664917374,
+											"parameters": {
+												"object-to-create": "Ball",
+												"layer": "\"Ball\"",
+												"x": "0",
+												"y": "0"
+											}
+										}
+									],
+									"sid": 231431018493589
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 474630231115096,
+							"parameters": {
+								"name": "\"StartGame\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "SCOREHUD",
+							"sid": 882952784022813,
+							"parameters": {
+								"text": "Score"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 796214106718737,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Collider",
+							"sid": 503124462254524,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 433204882910698,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 232667290185477,
+									"parameters": {
+										"index": "0",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 890283877129360
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Ball",
+							"sid": 541243265387058
+						}
+					],
+					"actions": [],
+					"sid": 142972620379604,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 912626511596806,
+									"parameters": {
+										"variable": "Game",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 825012718372522,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 595130192217963,
+											"parameters": {
+												"object": "Ball",
+												"expression": "Ball.IID",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 978876709606234,
+											"parameters": {
+												"instance-variable": "Bow",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 645813946508163,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 803402647942678,
+											"parameters": {
+												"instance-variable": "TimerValue",
+												"value": "0.8"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Ball",
+											"sid": 259128926885529,
+											"parameters": {
+												"instance-variable": "Clockwise",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 467528885086358,
+											"parameters": {
+												"instance-variable": "MaxFramePos",
+												"value": "11"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 811511853198937,
+											"parameters": {
+												"seconds": "0.4"
+											}
+										},
+										{
+											"id": "start-timer",
+											"objectClass": "Ball",
+											"sid": 109818683250946,
+											"behaviorType": "Timer",
+											"parameters": {
+												"duration": "0.8",
+												"type": "once",
+												"tag": "\"Move\""
+											}
+										}
+									],
+									"sid": 757638300265644
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 859504506527704,
+											"parameters": {
+												"object": "Ball",
+												"expression": "Ball.IID",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 464758489319642,
+											"parameters": {
+												"instance-variable": "Bow",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 959421416389287,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"value": "9"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 920207755878139,
+											"parameters": {
+												"instance-variable": "TimerValue",
+												"value": "0.8"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Ball",
+											"sid": 861584962295130,
+											"parameters": {
+												"instance-variable": "Clockwise",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 925984826212189,
+											"parameters": {
+												"instance-variable": "MaxFramePos",
+												"value": "9"
+											}
+										},
+										{
+											"id": "start-timer",
+											"objectClass": "Ball",
+											"sid": 560108168274741,
+											"behaviorType": "Timer",
+											"parameters": {
+												"duration": "0.8",
+												"type": "once",
+												"tag": "\"Move\""
+											}
+										}
+									],
+									"sid": 292348414944481
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 299293035026769,
+											"parameters": {
+												"object": "Ball",
+												"expression": "Ball.IID",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 688192936547636,
+											"parameters": {
+												"instance-variable": "Bow",
+												"value": "2"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 610088713873177,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"value": "7"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 882823049219942,
+											"parameters": {
+												"instance-variable": "TimerValue",
+												"value": "0.6"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Ball",
+											"sid": 755071258977813,
+											"parameters": {
+												"instance-variable": "Clockwise",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 981958085768520,
+											"parameters": {
+												"instance-variable": "MaxFramePos",
+												"value": "7"
+											}
+										},
+										{
+											"id": "start-timer",
+											"objectClass": "Ball",
+											"sid": 304367757525629,
+											"behaviorType": "Timer",
+											"parameters": {
+												"duration": "0.8",
+												"type": "once",
+												"tag": "\"Move\""
+											}
+										}
+									],
+									"sid": 466115845426360
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 529324264319736,
+									"parameters": {
+										"variable": "Game",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 571999495847178,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 309918043575427,
+											"parameters": {
+												"object": "Ball",
+												"expression": "Ball.IID",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 917548754837590,
+											"parameters": {
+												"instance-variable": "Bow",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 952916707113270,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 507901693533878,
+											"parameters": {
+												"instance-variable": "TimerValue",
+												"value": "0.8"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Ball",
+											"sid": 289645991658156,
+											"parameters": {
+												"instance-variable": "Clockwise",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 161346774519493,
+											"parameters": {
+												"instance-variable": "MaxFramePos",
+												"value": "11"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 623359589235452,
+											"parameters": {
+												"seconds": "0.4"
+											}
+										},
+										{
+											"id": "start-timer",
+											"objectClass": "Ball",
+											"sid": 840820246796113,
+											"behaviorType": "Timer",
+											"parameters": {
+												"duration": "0.8",
+												"type": "once",
+												"tag": "\"Move\""
+											}
+										}
+									],
+									"sid": 883991532152355
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 555671036478894,
+											"parameters": {
+												"object": "Ball",
+												"expression": "Ball.IID",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 221559437495557,
+											"parameters": {
+												"instance-variable": "Bow",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 129529111052060,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"value": "9"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 298252091889641,
+											"parameters": {
+												"instance-variable": "TimerValue",
+												"value": "0.8"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Ball",
+											"sid": 483550284894499,
+											"parameters": {
+												"instance-variable": "Clockwise",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 848265522284287,
+											"parameters": {
+												"instance-variable": "MaxFramePos",
+												"value": "9"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 868087482813686,
+											"parameters": {
+												"seconds": "0.2"
+											}
+										},
+										{
+											"id": "start-timer",
+											"objectClass": "Ball",
+											"sid": 398372958259229,
+											"behaviorType": "Timer",
+											"parameters": {
+												"duration": "0.8",
+												"type": "once",
+												"tag": "\"Move\""
+											}
+										}
+									],
+									"sid": 103221809414909
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 245215682915892,
+											"parameters": {
+												"object": "Ball",
+												"expression": "Ball.IID",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 423357177749831,
+											"parameters": {
+												"instance-variable": "Bow",
+												"value": "2"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 539153054284345,
+											"parameters": {
+												"instance-variable": "FramePos",
+												"value": "7"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 616724073872899,
+											"parameters": {
+												"instance-variable": "TimerValue",
+												"value": "0.8"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Ball",
+											"sid": 880628311529527,
+											"parameters": {
+												"instance-variable": "Clockwise",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Ball",
+											"sid": 259757110553847,
+											"parameters": {
+												"instance-variable": "MaxFramePos",
+												"value": "7"
+											}
+										},
+										{
+											"id": "start-timer",
+											"objectClass": "Ball",
+											"sid": 385308052388483,
+											"behaviorType": "Timer",
+											"parameters": {
+												"duration": "0.8",
+												"type": "once",
+												"tag": "\"Move\""
+											}
+										}
+									],
+									"sid": 554407420776767
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 798123152921524
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Buttons",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 341462806377051,
+							"parameters": {
+								"object": "BUTTONNORMAL"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "BUTTONNORMAL",
+							"sid": 780289314251998,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 720148978960847
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 393564672924544,
+							"parameters": {
+								"object": "BUTTONNORMAL"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "BUTTONNORMAL",
+							"sid": 351994688375470,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 701131933167966
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 796788514321243,
+							"parameters": {
+								"object": "ButtonSelectNormal"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ButtonSelectNormal",
+							"sid": 519581336042066,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 934960333238515
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 231536790119629,
+							"parameters": {
+								"object": "ButtonSelectNormal"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ButtonSelectNormal",
+							"sid": 142928985573624,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 323305238338410
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 828120588648605,
+							"parameters": {
+								"variable": "GameRunning"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 227876943475719,
+							"parameters": {
+								"variable": "Hour",
+								"value": "UTC.hours"
+							}
+						}
+					],
+					"sid": 267273230067867
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 521822023040916,
+							"parameters": {
+								"variable": "ShowingHour"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 530146537300261,
+							"parameters": {
+								"variable": "GameRunning"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 642315387862883,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 994267084528262,
+									"parameters": {
+										"variable": "Hour",
+										"comparison": 4,
+										"value": "12"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "SCOREHUD",
+									"sid": 187436585539630,
+									"parameters": {
+										"text": "zeropad(UTC.hours%12,2) & \":\"&  zeropad(UTC.minutes,2)"
+									}
+								}
+							],
+							"sid": 477674308607188
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 903941478872787,
+									"parameters": {
+										"variable": "Hour",
+										"comparison": 2,
+										"value": "12"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "SCOREHUD",
+									"sid": 972611575967784,
+									"parameters": {
+										"text": "zeropad(UTC.hours,2) & \":\"&  zeropad(UTC.minutes,2)"
+									}
+								}
+							],
+							"sid": 275093533495609
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 735638271125263,
+							"parameters": {
+								"variable": "GameRunning"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 661744158875737,
+							"parameters": {
+								"variable": "ButtonReady"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 559375271771917,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-touching-object",
+									"objectClass": "Touch",
+									"sid": 151030594269092,
+									"parameters": {
+										"object": "ButtonSelectNormal"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 231096900031479,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "ButtonSelectNormal",
+											"sid": 345832888822705,
+											"parameters": {
+												"instance-variable": "Option",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 144339479993420,
+											"parameters": {
+												"variable": "ShowingHour",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 887121450916073,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 306122573516942,
+													"parameters": {
+														"variable": "Game",
+														"comparison": 0,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-text",
+													"objectClass": "SCOREHUD",
+													"sid": 726630337370438,
+													"parameters": {
+														"text": "HighScoreEasy"
+													}
+												}
+											],
+											"sid": 112189660893408
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 364861589797624,
+													"parameters": {
+														"variable": "Game",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-text",
+													"objectClass": "SCOREHUD",
+													"sid": 299591255945827,
+													"parameters": {
+														"text": "HighScoreHard"
+													}
+												}
+											],
+											"sid": 185776334251511
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-touching-object",
+									"objectClass": "Touch",
+									"sid": 961423417714576,
+									"parameters": {
+										"object": "ButtonSelectNormal"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 571732200522808,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "ButtonSelectNormal",
+											"sid": 799094973054098,
+											"parameters": {
+												"instance-variable": "Option",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 704654711680268,
+											"parameters": {
+												"variable": "ShowingHour",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 626277778354312
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 299880916588659,
+							"parameters": {
+								"object": "ButtonSelectNormal"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 290399473935254,
+							"parameters": {
+								"variable": "GameRunning"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 656624280014571,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ButtonSelectNormal",
+									"sid": 431111937730392,
+									"parameters": {
+										"instance-variable": "Option",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 207537376982058,
+									"parameters": {
+										"variable": "ButtonReady",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 903197758951841
+						}
+					]
+				}
+			],
+			"sid": 945079017516515
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "HUDMENU",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 895955641865697,
+							"parameters": {
+								"object": "PAUSEBUTTON"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 449984385733503,
+							"parameters": {
+								"variable": "GameRunning"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 405325684115038,
+							"parameters": {
+								"variable": "PAUSED"
+							}
+						}
+					],
+					"sid": 687071553465432
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 380566114687837,
+							"parameters": {
+								"variable": "PAUSED"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 228850007578184,
+							"parameters": {
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "PAUSEBUTTON",
+							"sid": 191235236839539,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 985340076081785
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 130745565620567,
+							"parameters": {
+								"variable": "PAUSED"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 429761118982398,
+							"parameters": {
+								"time-scale": "Timescalevalue"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "PAUSEBUTTON",
+							"sid": 412364083170477,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 289117843903094
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 601790796683052,
+							"parameters": {
+								"variable": "GameRunning"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 732738584367628,
+							"parameters": {
+								"variable": "PAUSED"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 453641749895082,
+							"parameters": {
+								"time-scale": "Timescalevalue"
+							}
+						}
+					],
+					"sid": 652175281198509
+				},
+				{
+					"eventType": "comment",
+					"text": "Options"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 160316981599356,
+							"parameters": {
+								"variable": "GameRunning"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 617230844566199,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 948989983256829,
+									"parameters": {
+										"object": "Options"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 640314983223358,
+									"parameters": {
+										"layer": "\"HUD\"",
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 264999648364152
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 138685152357905,
+							"parameters": {
+								"layer": "\"HUD\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 160868930781773,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ButtonCheck",
+									"sid": 507197205889235,
+									"parameters": {
+										"instance-variable": "Option",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 491550394196596,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 615734117061361,
+											"parameters": {
+												"variable": "OpacityInactive",
+												"comparison": 5,
+												"value": "20"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "ButtonCheck",
+											"sid": 625954922094434,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 929479711212934
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 250893690117881,
+											"parameters": {
+												"variable": "OpacityInactive",
+												"comparison": 2,
+												"value": "20"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "ButtonCheck",
+											"sid": 526416066969848,
+											"parameters": {
+												"frame-number": "0"
+											}
+										}
+									],
+									"sid": 160194737842499
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ButtonCheck",
+									"sid": 689016063049233,
+									"parameters": {
+										"instance-variable": "Option",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 985470450883454,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 807588462372608,
+											"parameters": {
+												"variable": "Flash"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "ButtonCheck",
+											"sid": 100435539534232,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 848956265128957
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 768037718738106,
+											"parameters": {
+												"variable": "Flash"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "ButtonCheck",
+											"sid": 572183554820026,
+											"parameters": {
+												"frame-number": "0"
+											}
+										}
+									],
+									"sid": 888436131021884
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 157189840055394,
+							"parameters": {
+								"object": "ButtonCheck"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 529965797417801,
+							"parameters": {
+								"layer": "\"HUD\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 559422028859935,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ButtonCheck",
+									"sid": 451326755695933,
+									"parameters": {
+										"instance-variable": "Option",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 880276121380876,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 944035789835040,
+											"parameters": {
+												"variable": "OpacityInactive",
+												"comparison": 5,
+												"value": "20"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 363144518076937,
+											"parameters": {
+												"variable": "OpacityInactive",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 650270966164137,
+											"parameters": {
+												"key": "\"InactiveFrame\"",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 486595599637273
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 843176644994863
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 800295035249018,
+											"parameters": {
+												"variable": "OpacityInactive",
+												"value": "20"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 554130477922682,
+											"parameters": {
+												"key": "\"InactiveFrame\"",
+												"value": "20"
+											}
+										}
+									],
+									"sid": 786791590607857
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ButtonCheck",
+									"sid": 802127484378204,
+									"parameters": {
+										"instance-variable": "Option",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "toggle-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 304904898393928,
+									"parameters": {
+										"variable": "Flash"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 553410416166440,
+									"parameters": {
+										"key": "\"FlashFrame\"",
+										"value": "Flash"
+									}
+								}
+							],
+							"sid": 318844038448152
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 923708910610330,
+							"parameters": {
+								"object": "BackButton"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 354682546821142,
+							"parameters": {
+								"layer": "\"HUD\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 826140833807330,
+							"parameters": {
+								"layer": "\"HUD\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "DataErased",
+							"sid": 961464045159952,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DataErased",
+							"sid": 630482523624478,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "NoOption",
+							"sid": 528991788134824,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "YesOption",
+							"sid": 821441227009958,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 865988395085808
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 731200049562674,
+							"parameters": {
+								"object": "EraseData"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 464017803664029,
+							"parameters": {
+								"layer": "\"HUD\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DataErased",
+							"sid": 566137958978254,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "DataErased",
+							"sid": 245609657015572,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "NoOption",
+							"sid": 367088595430884,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "YesOption",
+							"sid": 985997786467238,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 930043406371288
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 375080175107298,
+							"parameters": {
+								"object": "NoOption"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "NoOption",
+							"sid": 742302806327545
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DataErased",
+							"sid": 978343522657958,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "NoOption",
+							"sid": 646149448338634,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "YesOption",
+							"sid": 676103520699854,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 298736338669521
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 135375814159474,
+							"parameters": {
+								"object": "YesOption"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "YesOption",
+							"sid": 638082168535890
+						}
+					],
+					"actions": [
+						{
+							"id": "clear-storage",
+							"objectClass": "LocalStorage",
+							"sid": 838524689707921
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DataErased",
+							"sid": 921592999562032,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "NoOption",
+							"sid": 112055850374457,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "YesOption",
+							"sid": 525035317977667,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "DataErased",
+							"sid": 305670478559014,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 189049240477190
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 788963937147980
+						}
+					],
+					"actions": [
+						{
+							"id": "set-silent",
+							"objectClass": "Audio",
+							"sid": 288192411740700,
+							"parameters": {
+								"mode": "silent"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 896721806847092,
+							"parameters": {
+								"audio-file": "BallGameAtickSound1"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 197461159531531,
+							"parameters": {
+								"audio-file": "BallGameAtickSound2"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 712250651509575,
+							"parameters": {
+								"audio-file": "BallGameBTick1"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 205174568637801,
+							"parameters": {
+								"audio-file": "BallGameBTick2"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 710795227580430,
+							"parameters": {
+								"audio-file": "BallGameBTick3"
+							}
+						},
+						{
+							"id": "preload",
+							"objectClass": "Audio",
+							"sid": 877492857848298,
+							"parameters": {
+								"audio-file": "Lose"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 841527510174658,
+							"parameters": {
+								"audio-file": "BallGameAtickSound1",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 903789346808766,
+							"parameters": {
+								"audio-file": "BallGameAtickSound2",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 346579213712650,
+							"parameters": {
+								"audio-file": "BallGameBTick1",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 946197237190177,
+							"parameters": {
+								"audio-file": "BallGameBTick2",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 844572279149875,
+							"parameters": {
+								"audio-file": "BallGameBTick3",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 906589512746389,
+							"parameters": {
+								"audio-file": "Lose",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 946272506611019,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "set-silent",
+							"objectClass": "Audio",
+							"sid": 926627369654995,
+							"parameters": {
+								"mode": "not-silent"
+							}
+						}
+					],
+					"sid": 245052160742894
+				}
+			],
+			"sid": 269068946533904
+		}
+	],
+	"sid": 424290451385950
+}

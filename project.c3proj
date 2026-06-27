@@ -1,0 +1,296 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 12000,
+	"name": "BallGameandwatch",
+	"runtime": "c2",
+	"useWorker": false,
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Function",
+			"name": "Function",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "wtUtc",
+			"name": "UTC",
+			"author": "Wackytoaster",
+			"version": "1.0.0.0",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"version": "r120",
+			"bundled": false
+		}
+	],
+	"uniqueId": "tim14a9fhnx",
+	"objectTypes": {
+		"items": [
+			"GWBALLRESTORE",
+			"GWBALLRESTOREwithconsolev",
+			"Bg",
+			"JewlerBody",
+			"Arms",
+			"Keyboard",
+			"Legs",
+			"Arm",
+			"BallFrame",
+			"Array",
+			"Ball",
+			"CRUSH",
+			"Function",
+			"Collider",
+			"SCOREHUD",
+			"Audio",
+			"GWBALLRESTORE2",
+			"BUTTONNORMAL",
+			"Touch",
+			"ButtonSelectNormal",
+			"Browser",
+			"UTC",
+			"LocalStorage",
+			"PAUSEHUD",
+			"PAUSEBUTTON",
+			"ButtonCheck",
+			"EraseData",
+			"YesOption",
+			"NoOption",
+			"DataErased",
+			"Options",
+			"BackButton"
+		],
+		"subfolders": []
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Game"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Game",
+			"Score"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"sound": {
+			"items": [
+				{
+					"name": "BallGameAtickSound1.webm",
+					"type": "audio/webm; codecs=opus"
+				},
+				{
+					"name": "BallGameAtickSound2.webm",
+					"type": "audio/webm; codecs=opus"
+				},
+				{
+					"name": "BallGameBTick1.webm",
+					"type": "audio/webm; codecs=opus"
+				},
+				{
+					"name": "BallGameBTick2.webm",
+					"type": "audio/webm; codecs=opus"
+				},
+				{
+					"name": "BallGameBTick3.webm",
+					"type": "audio/webm; codecs=opus"
+				},
+				{
+					"name": "Lose.webm",
+					"type": "audio/webm; codecs=opus"
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "DJB Get Digital.ttf",
+					"type": "application/font-sfnt"
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png"
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png"
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png"
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "Remake of Ball",
+		"version": "1.0",
+		"author": "SETCONTROLX Miguel Vasquez Mariano Josuè",
+		"authorEmail": "josmv50@outlook.com",
+		"authorWebsite": "",
+		"appId": "setx.games",
+		"pixelRounding": false,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "landscape",
+		"enableWebGL": false,
+		"sampling": "linear",
+		"downscaling": "medium",
+		"loaderStyle": "percent",
+		"preloadSounds": true,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true
+	},
+	"viewportWidth": 1920,
+	"viewportHeight": 1230,
+	"firstLayout": null
+}

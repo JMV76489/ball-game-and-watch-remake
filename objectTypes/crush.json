@@ -1,0 +1,60 @@
+{
+	"name": "CRUSH",
+	"plugin-id": "Sprite",
+	"sid": 197879880729341,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Side",
+			"type": "string",
+			"desc": "",
+			"sid": 782709384992115
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 128443488660654
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 319,
+						"height": 224,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 17,
+						"duration": 1
+					},
+					{
+						"width": 294,
+						"height": 165,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 18,
+						"duration": 1
+					}
+				],
+				"sid": 275734715711504,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

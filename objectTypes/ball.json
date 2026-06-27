@@ -1,0 +1,102 @@
+{
+	"name": "Ball",
+	"plugin-id": "Sprite",
+	"sid": 984664743848928,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Bow",
+			"type": "number",
+			"desc": "",
+			"sid": 186331346144408
+		},
+		{
+			"name": "FramePos",
+			"type": "number",
+			"desc": "",
+			"sid": 643412398195277
+		},
+		{
+			"name": "TimerValue",
+			"type": "number",
+			"desc": "",
+			"sid": 330802862629618
+		},
+		{
+			"name": "Clockwise",
+			"type": "boolean",
+			"desc": "",
+			"sid": 584054721516528
+		},
+		{
+			"name": "MaxFramePos",
+			"type": "number",
+			"desc": "",
+			"sid": 513091481026953
+		},
+		{
+			"name": "Touched",
+			"type": "boolean",
+			"desc": "",
+			"sid": 946586929186312
+		},
+		{
+			"name": "CatchFrame",
+			"type": "number",
+			"desc": "",
+			"sid": 239032748221639
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 454990132697942
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 466813655379545
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 40,
+						"height": 41,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.95,
+								0,
+								0.95,
+								0.9512195121951219,
+								0,
+								0.9512195121951219
+							]
+						},
+						"duration": 1
+					}
+				],
+				"sid": 149441718377754,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

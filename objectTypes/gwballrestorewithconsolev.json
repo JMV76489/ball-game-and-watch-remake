@@ -1,0 +1,56 @@
+{
+	"name": "GWBALLRESTOREwithconsolev",
+	"plugin-id": "Sprite",
+	"sid": 795495156514841,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1230,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9989583333333333,
+								0.0008130081300813008,
+								0.9989583333333333,
+								0.5,
+								0.9989583333333333,
+								0.9983739837398374,
+								0.5,
+								0.9991869918699187,
+								0,
+								0.9991869918699187,
+								0,
+								0.5
+							]
+						},
+						"duration": 1
+					}
+				],
+				"sid": 971684012716420,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

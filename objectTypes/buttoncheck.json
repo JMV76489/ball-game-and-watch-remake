@@ -1,0 +1,84 @@
+{
+	"name": "ButtonCheck",
+	"plugin-id": "Sprite",
+	"sid": 594711105908221,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Option",
+			"type": "number",
+			"desc": "",
+			"sid": 854949543110346
+		},
+		{
+			"name": "Checked",
+			"type": "boolean",
+			"desc": "",
+			"sid": 535390964649481
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 78,
+						"height": 78,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 33,
+						"collisionPoly": {
+							"points": [
+								0.05128205128205128,
+								0.03205128205128205,
+								0.9487179487179487,
+								0.03205128205128205,
+								0.9487179487179487,
+								0.967948717948718,
+								0.05128205128205128,
+								0.967948717948718
+							]
+						},
+						"duration": 1
+					},
+					{
+						"width": 78,
+						"height": 78,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 32,
+						"collisionPoly": {
+							"points": [
+								0.00641025641025641,
+								0.03205128205128205,
+								0.9935897435897436,
+								0.03205128205128205,
+								0.9935897435897436,
+								0.967948717948718,
+								0.00641025641025641,
+								0.967948717948718
+							]
+						},
+						"duration": 1
+					}
+				],
+				"sid": 444335175047421,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"name": "BUTTONNORMAL",
+	"plugin-id": "Sprite",
+	"sid": 200606366505643,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Right",
+			"type": "boolean",
+			"desc": "",
+			"sid": 170595729527173
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 227,
+						"height": 228,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 23,
+						"duration": 1
+					},
+					{
+						"width": 227,
+						"height": 228,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 24,
+						"duration": 1
+					}
+				],
+				"sid": 462454875664710,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

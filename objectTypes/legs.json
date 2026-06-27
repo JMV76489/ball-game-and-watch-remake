@@ -1,0 +1,82 @@
+{
+	"name": "Legs",
+	"plugin-id": "Sprite",
+	"sid": 880692715238167,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "FramePos",
+			"type": "number",
+			"desc": "",
+			"sid": 583976672837305
+		},
+		{
+			"name": "Active",
+			"type": "boolean",
+			"desc": "",
+			"sid": 336447754340374
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 77,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6,
+						"duration": 1
+					},
+					{
+						"width": 62,
+						"height": 59,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5,
+						"duration": 1
+					},
+					{
+						"width": 59,
+						"height": 59,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7,
+						"duration": 1
+					},
+					{
+						"width": 77,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8,
+						"duration": 1
+					}
+				],
+				"sid": 763110770689051,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

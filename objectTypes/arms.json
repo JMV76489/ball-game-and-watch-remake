@@ -1,0 +1,169 @@
+{
+	"name": "Arms",
+	"plugin-id": "Sprite",
+	"sid": 907495492292367,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Active",
+			"type": "boolean",
+			"desc": "",
+			"sid": 915258588805559
+		},
+		{
+			"name": "ArmPos",
+			"type": "number",
+			"desc": "",
+			"sid": 748564801032980
+		},
+		{
+			"name": "ArmID",
+			"type": "number",
+			"desc": "",
+			"sid": 921402261928332
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 872673925594041
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 55,
+						"height": 81,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.4727272727272727,
+								"y": 0.2222222222222222
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 77,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 10,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.4583333333333333,
+								"y": 0.18181818181818182
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 88,
+						"height": 99,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 11,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.7045454545454546,
+								"y": 0.12121212121212122
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 721633915996427,
+				"name": "Right",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 92,
+						"height": 95,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 13,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.2608695652173913,
+								"y": 0.12631578947368421
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 77,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 14,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5208333333333334,
+								"y": 0.12987012987012986
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 81,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 15,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5,
+								"y": 0.20987654320987653
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 314754399766001,
+				"name": "Left",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}
